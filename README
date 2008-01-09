@@ -1,0 +1,104 @@
+ocaml-findlib
+------------------------------------------
+The findlib library provides a scheme to manage reusable software 
+components (packages), and includes tools that support this scheme. 
+Packages are collections of OCaml modules for which metainformation can 
+be stored. The packages are kept in the filesystem hierarchy, but with 
+strict directory structure. The library contains functions to look the 
+directory up that stores a package, to query metainformation about a 
+package, and to retrieve dependency information about multiple packages. 
+There is also a tool that allows the user to enter queries on the 
+command-line. In order to simplify compilation and linkage, there are 
+new frontends of the various OCaml compilers that can directly deal with 
+packages.
+
+Runtime requirements:
+  ocaml-3.10.0-1
+
+Build requirements:
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-3.10.0-1
+
+Canonical website:
+  http://www.ocaml-programming.de/programming/findlib.html
+
+Canonical download:
+  http://www.ocaml-programming.de/packages/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-findlib-1.2.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-findlib-1.2.1-X.cygport all
+
+This will create:
+  /usr/src/ocaml-findlib-1.2.1-X-src.tar.bz2
+  /usr/src/ocaml-findlib-1.2.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/ocamlfind.exe
+  /usr/bin/safe_camlp4
+  /usr/lib/ocaml/3.10/bigarray/META
+  /usr/lib/ocaml/3.10/camlp4/META
+  /usr/lib/ocaml/3.10/dbm/META
+  /usr/lib/ocaml/3.10/dynlink/META
+  /usr/lib/ocaml/3.10/findlib/META
+  /usr/lib/ocaml/3.10/findlib/Makefile.config
+  /usr/lib/ocaml/3.10/findlib/findlib.a
+  /usr/lib/ocaml/3.10/findlib/findlib.cma
+  /usr/lib/ocaml/3.10/findlib/findlib.cmi
+  /usr/lib/ocaml/3.10/findlib/findlib.cmxa
+  /usr/lib/ocaml/3.10/findlib/findlib.conf
+  /usr/lib/ocaml/3.10/findlib/findlib.mli
+  /usr/lib/ocaml/3.10/findlib/findlib_top.cma
+  /usr/lib/ocaml/3.10/findlib/fl_metascanner.cmi
+  /usr/lib/ocaml/3.10/findlib/fl_metascanner.mli
+  /usr/lib/ocaml/3.10/findlib/fl_package_base.cmi
+  /usr/lib/ocaml/3.10/findlib/fl_package_base.mli
+  /usr/lib/ocaml/3.10/findlib/make_wizard.exe
+  /usr/lib/ocaml/3.10/findlib/make_wizard.pattern
+  /usr/lib/ocaml/3.10/findlib/topfind.cmi
+  /usr/lib/ocaml/3.10/findlib/topfind.mli
+  /usr/lib/ocaml/3.10/graphics/META
+  /usr/lib/ocaml/3.10/labltk/META
+  /usr/lib/ocaml/3.10/num-top/META
+  /usr/lib/ocaml/3.10/num-top/num_top.cma
+  /usr/lib/ocaml/3.10/num-top/num_top.cmi
+  /usr/lib/ocaml/3.10/num-top/num_top_printers.cmi
+  /usr/lib/ocaml/3.10/num/META
+  /usr/lib/ocaml/3.10/stdlib/META
+  /usr/lib/ocaml/3.10/str/META
+  /usr/lib/ocaml/3.10/threads/META
+  /usr/lib/ocaml/3.10/topfind
+  /usr/lib/ocaml/3.10/unix/META
+  /usr/share/doc/ocaml-findlib-1.2.1/INSTALL
+  /usr/share/doc/ocaml-findlib-1.2.1/LICENSE
+  /usr/share/doc/ocaml-findlib-1.2.1/README
+  /usr/share/man/man1/ocamlfind.1.gz
+  /usr/share/man/man5/META.5.gz
+  /usr/share/man/man5/findlib.conf.5.gz
+  /usr/share/man/man5/site-lib.5.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.2.1-1 -----
+Version bump, built with ocaml-3.10.
+
+----- version 1.0.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

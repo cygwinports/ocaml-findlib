@@ -1,0 +1,25 @@
+ORIG_PN="${PN#ocaml-}"
+inherit ocaml
+
+DESCRIPTION="OCaml package management scheme"
+HOMEPAGE="http://www.ocaml-programming.de/programming/findlib.html"
+SRC_URI="http://www.ocaml-programming.de/packages/${ORIG_PN}-${PV}.tar.gz"
+
+MAKEOPTS+=" -j1"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	./configure \
+		-bindir /usr/bin -mandir /usr/share/man \
+		-sitelib ${OCAML_LIBDIR} \
+		-config ${OCAML_LIBDIR}/findlib/findlib.conf \
+		-with-toolbox \
+		|| error "configure failed"
+	cygmake all opt
+}
+
+src_install() {
+	cd ${B}
+	cyginstall prefix=${D}
+}
