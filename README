@@ -13,15 +13,15 @@ new frontends of the various OCaml compilers that can directly deal with
 packages.
 
 Runtime requirements:
-  ocaml-3.10.0-1
+  ocaml-3.10.2-1
 
 Build requirements:
-  cygwin-1.5.25-7
-  binutils-20060817-1
-  cygport-0.3.8-1
+  cygwin-1.5.25-15
+  binutils-20080523-2
+  cygport-0.3.12-1
   gcc-core-3.4.4-3
   make-3.81-1
-  ocaml-3.10.0-1
+  ocaml-3.10.2-1
 
 Canonical website:
   http://www.ocaml-programming.de/programming/findlib.html
@@ -32,15 +32,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-findlib-1.2.1-X-src.tar.bz2
+  unpack ocaml-findlib-1.2.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-findlib-1.2.1-X.cygport all
+  cygport ./ocaml-findlib-1.2.2-X.cygport all
 
 This will create:
-  /usr/src/ocaml-findlib-1.2.1-X-src.tar.bz2
-  /usr/src/ocaml-findlib-1.2.1-X.tar.bz2
+  /usr/src/ocaml-findlib-1.2.2-X-src.tar.bz2
+  /usr/src/ocaml-findlib-1.2.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -81,9 +81,9 @@ Files included in the binary package:
   /usr/lib/ocaml/3.10/threads/META
   /usr/lib/ocaml/3.10/topfind
   /usr/lib/ocaml/3.10/unix/META
-  /usr/share/doc/ocaml-findlib-1.2.1/INSTALL
-  /usr/share/doc/ocaml-findlib-1.2.1/LICENSE
-  /usr/share/doc/ocaml-findlib-1.2.1/README
+  /usr/share/doc/ocaml-findlib-1.2.2/INSTALL
+  /usr/share/doc/ocaml-findlib-1.2.2/LICENSE
+  /usr/share/doc/ocaml-findlib-1.2.2/README
   /usr/share/man/man1/ocamlfind.1.gz
   /usr/share/man/man5/META.5.gz
   /usr/share/man/man5/findlib.conf.5.gz
@@ -92,6 +92,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.2-1 -----
+Version bump.
 
 ----- version 1.2.1-1 -----
 Version bump, built with ocaml-3.10.
