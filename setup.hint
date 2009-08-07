@@ -1,5 +1,5 @@
 category: OCaml
-requires: ocaml
+requires: libgcc1 ocaml
 sdesc: "OCaml library package manager"
 ldesc: "The findlib library provides a scheme to manage reusable software
 components (packages), and includes tools that support this scheme.
