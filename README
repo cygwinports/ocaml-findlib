@@ -13,15 +13,15 @@ new frontends of the various OCaml compilers that can directly deal with
 packages.
 
 Runtime requirements:
-  cygwin-1.7.0-56
-  libgcc1-4.3.2-2
-  ocaml-3.11.1-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  ocaml-3.11.2-1
 
 Build requirements:
   binutils-2.19.51-1
-  cygport-0.9.8-1
-  flexdll-0.19.169-1
-  gcc4-core-4.3.2-2
+  cygport-0.9.80-1
+  flexdll-0.20-1
+  gcc4-core-4.3.4-3
   make-3.81-2
 
 Canonical website:
@@ -33,65 +33,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-findlib-1.2.4-X-src.tar.bz2
+  unpack ocaml-findlib-1.2.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-findlib-1.2.4-X.cygport all
+  cygport ./ocaml-findlib-1.2.5-X.cygport all
 
 This will create:
-  /usr/src/ocaml-findlib-1.2.4-X-src.tar.bz2
-  /usr/src/ocaml-findlib-1.2.4-X.tar.bz2
+  /usr/src/ocaml-findlib-1.2.5-X-src.tar.bz2
+  /usr/src/ocaml-findlib-1.2.5-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/ocamlfind.exe
-  /usr/bin/safe_camlp4
-  /usr/lib/ocaml/3.11/bigarray/META
-  /usr/lib/ocaml/3.11/camlp4/META
-  /usr/lib/ocaml/3.11/dbm/META
-  /usr/lib/ocaml/3.11/dynlink/META
-  /usr/lib/ocaml/3.11/findlib/META
-  /usr/lib/ocaml/3.11/findlib/Makefile.config
-  /usr/lib/ocaml/3.11/findlib/findlib.a
-  /usr/lib/ocaml/3.11/findlib/findlib.cma
-  /usr/lib/ocaml/3.11/findlib/findlib.cmi
-  /usr/lib/ocaml/3.11/findlib/findlib.cmxa
-  /usr/lib/ocaml/3.11/findlib/findlib.conf
-  /usr/lib/ocaml/3.11/findlib/findlib.mli
-  /usr/lib/ocaml/3.11/findlib/findlib_top.cma
-  /usr/lib/ocaml/3.11/findlib/fl_metascanner.cmi
-  /usr/lib/ocaml/3.11/findlib/fl_metascanner.mli
-  /usr/lib/ocaml/3.11/findlib/fl_package_base.cmi
-  /usr/lib/ocaml/3.11/findlib/fl_package_base.mli
-  /usr/lib/ocaml/3.11/findlib/make_wizard.exe
-  /usr/lib/ocaml/3.11/findlib/make_wizard.pattern
-  /usr/lib/ocaml/3.11/findlib/topfind.cmi
-  /usr/lib/ocaml/3.11/findlib/topfind.mli
-  /usr/lib/ocaml/3.11/graphics/META
-  /usr/lib/ocaml/3.11/labltk/META
-  /usr/lib/ocaml/3.11/num-top/META
-  /usr/lib/ocaml/3.11/num-top/num_top.cma
-  /usr/lib/ocaml/3.11/num-top/num_top.cmi
-  /usr/lib/ocaml/3.11/num-top/num_top_printers.cmi
-  /usr/lib/ocaml/3.11/num/META
-  /usr/lib/ocaml/3.11/stdlib/META
-  /usr/lib/ocaml/3.11/str/META
-  /usr/lib/ocaml/3.11/threads/META
-  /usr/lib/ocaml/3.11/topfind
-  /usr/lib/ocaml/3.11/unix/META
-  /usr/share/doc/ocaml-findlib/LICENSE
-  /usr/share/doc/ocaml-findlib/README
-  /usr/share/man/man1/ocamlfind.1.gz
-  /usr/share/man/man5/META.5.gz
-  /usr/share/man/man5/findlib.conf.5.gz
-  /usr/share/man/man5/site-lib.5.gz
-
-------------------
-
 Port Notes:
+
+----- version 1.2.5-1 -----
+Version bump.
 
 ----- version 1.2.4-1 -----
 Initial release for OCaml 3.11 on Cygwin 1.7.
