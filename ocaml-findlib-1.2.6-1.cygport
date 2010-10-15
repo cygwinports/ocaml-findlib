@@ -2,8 +2,8 @@ ORIG_PN="${PN#ocaml-}"
 inherit ocaml
 
 DESCRIPTION="OCaml package management scheme"
-HOMEPAGE="http://www.ocaml-programming.de/programming/findlib.html"
-SRC_URI="http://www.ocaml-programming.de/packages/${ORIG_PN}-${PV}.tar.gz"
+HOMEPAGE="http://projects.camlcity.org/projects/findlib.html"
+SRC_URI="http://download.camlcity.org/download/${ORIG_PN}-${PV}.tar.gz"
 PATCH_URI="1.2.1-cygwin.patch"
 
 MAKEOPTS+=" -j1"

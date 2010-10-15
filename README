@@ -13,39 +13,42 @@ new frontends of the various OCaml compilers that can directly deal with
 packages.
 
 Runtime requirements:
-  cygwin-1.7.1-1
-  libgcc1-4.3.4-3
-  ocaml-3.11.2-1
+  cygwin-1.7.7-1
+  ocaml-base-3.12.0-4
 
 Build requirements:
-  binutils-2.19.51-1
-  cygport-0.9.80-1
-  flexdll-0.20-1
-  gcc4-core-4.3.4-3
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  flexdll-0.25-1
+  gcc4-core-4.5.1-1
   make-3.81-2
+  ocaml-base-3.12.0-4
 
 Canonical website:
-  http://www.ocaml-programming.de/programming/findlib.html
+  http://projects.camlcity.org/projects/findlib.html
 
 Canonical download:
-  http://www.ocaml-programming.de/packages/
+  http://download.camlcity.org/download/
 
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-findlib-1.2.5-X-src.tar.bz2
+  unpack ocaml-findlib-1.2.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-findlib-1.2.5-X.cygport all
+  cygport ./ocaml-findlib-1.2.6-X.cygport all
 
 This will create:
-  /usr/src/ocaml-findlib-1.2.5-X-src.tar.bz2
-  /usr/src/ocaml-findlib-1.2.5-X.tar.bz2
+  /usr/src/ocaml-findlib-1.2.6-X-src.tar.bz2
+  /usr/src/ocaml-findlib-1.2.6-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 1.2.6-1 -----
+Version bump, built for OCaml 3.12.0.
 
 ----- version 1.2.5-1 -----
 Version bump.
