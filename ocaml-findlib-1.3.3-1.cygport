@@ -1,0 +1,38 @@
+ORIG_PN="${PN#ocaml-}"
+inherit ocaml
+
+CATEGORY="OCaml"
+SUMMARY="OCaml library package management scheme"
+DESCRIPTION="The findlib library provides a scheme to manage reusable software
+components (packages), and includes tools that support this scheme.
+Packages are collections of OCaml modules for which metainformation can
+be stored. The packages are kept in the filesystem hierarchy, but with
+strict directory structure. The library contains functions to look the
+directory up that stores a package, to query metainformation about a
+package, and to retrieve dependency information about multiple packages.
+There is also a tool that allows the user to enter queries on the
+command-line. In order to simplify compilation and linkage, there are
+new frontends of the various OCaml compilers that can directly deal with
+packages."
+HOMEPAGE="http://projects.camlcity.org/projects/findlib.html"
+SRC_URI="http://download.camlcity.org/download/${ORIG_PN}-${PV}.tar.gz"
+PATCH_URI="1.2.1-cygwin.patch"
+
+MAKEOPTS+=" -j1"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	./configure \
+		-bindir /usr/bin -mandir /usr/share/man \
+		-sitelib ${OCAML_LIBDIR} \
+		-config ${OCAML_LIBDIR}/findlib/findlib.conf \
+		-with-toolbox \
+		|| error "configure failed"
+	cygmake all opt
+}
+
+src_install() {
+	cd ${B}
+	cyginstall prefix=${D}
+}
