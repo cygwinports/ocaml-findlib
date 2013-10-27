@@ -1,7 +1,7 @@
 inherit ocaml
 
 NAME="ocaml-findlib"
-VERSION=1.3.3
+VERSION=1.4
 RELEASE=1
 CATEGORY="OCaml"
 SUMMARY="OCaml library package management scheme"
