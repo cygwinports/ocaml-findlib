@@ -1,6 +1,8 @@
-ORIG_PN="${PN#ocaml-}"
 inherit ocaml
 
+NAME="ocaml-findlib"
+VERSION=1.3.3
+RELEASE=1
 CATEGORY="OCaml"
 SUMMARY="OCaml library package management scheme"
 DESCRIPTION="The findlib library provides a scheme to manage reusable software
@@ -15,7 +17,8 @@ command-line. In order to simplify compilation and linkage, there are
 new frontends of the various OCaml compilers that can directly deal with
 packages."
 HOMEPAGE="http://projects.camlcity.org/projects/findlib.html"
-SRC_URI="http://download.camlcity.org/download/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="http://download.camlcity.org/download/findlib-${VERSION}.tar.gz"
+SRC_DIR="findlib-${VERSION}"
 PATCH_URI="1.2.1-cygwin.patch"
 
 MAKEOPTS+=" -j1"
