@@ -3,7 +3,7 @@ inherit ocaml
 NAME="ocaml-findlib"
 VERSION=1.4
 RELEASE=1
-CATEGORY="OCaml"
+CATEGORY="Devel"
 SUMMARY="OCaml library package management scheme"
 DESCRIPTION="The findlib library provides a scheme to manage reusable software
 components (packages), and includes tools that support this scheme.
