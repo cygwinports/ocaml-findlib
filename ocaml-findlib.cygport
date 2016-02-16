@@ -1,7 +1,7 @@
 inherit ocaml
 
 NAME="ocaml-findlib"
-VERSION=1.4
+VERSION=1.6.1
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="OCaml library package management scheme"
@@ -19,7 +19,10 @@ packages."
 HOMEPAGE="http://projects.camlcity.org/projects/findlib.html"
 SRC_URI="http://download.camlcity.org/download/findlib-${VERSION}.tar.gz"
 SRC_DIR="findlib-${VERSION}"
-PATCH_URI="1.2.1-cygwin.patch"
+PATCH_URI="
+	1.2.1-cygwin.patch
+	1.6.1-install.patch
+"
 
 MAKEOPTS+=" -j1"
 
